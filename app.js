@@ -1,5 +1,5 @@
 // QUICKFIX setup: replace this with your WhatsApp number including country code.
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const WHATSAPP_NUMBER = "919629580995";
 
 const serviceInput = document.getElementById("service");
 const serviceButtons = document.querySelectorAll(".service");
