@@ -1,0 +1,17 @@
+{
+  "name": "QUICKFIX \u2014 Nearby Services",
+  "short_name": "QUICKFIX",
+  "description": "Book trusted local home services.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#1769e0",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

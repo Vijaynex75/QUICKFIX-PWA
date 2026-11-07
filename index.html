@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1769e0">
+  <meta name="description" content="Book trusted local home services with QUICKFIX.">
+  <title>QUICKFIX — Nearby Services</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="QUICKFIX home"><span class="brand-mark">Q</span> QUICKFIX</a>
+    <span class="tag">LOCAL SERVICES</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR NEIGHBOURHOOD, MADE EASIER</p>
+      <h1>What do you need<br><span>fixed today?</span></h1>
+      <p class="sub">Find help for everyday home services — all in one place.</p>
+      <div class="location-pill">📍 <span id="locationLabel">Choose your area in the form</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">QUICK & SIMPLE</p><h2>Choose a service</h2></div>
+      </div>
+      <div class="services" id="services">
+        <button class="service selected" data-service="Electrician"><span>⚡</span><b>Electrician</b><small>Wiring & repairs</small></button>
+        <button class="service" data-service="Plumber"><span>🔧</span><b>Plumber</b><small>Leaks & taps</small></button>
+        <button class="service" data-service="AC Repair"><span>❄️</span><b>AC Repair</b><small>Service & repair</small></button>
+        <button class="service" data-service="Home Cleaning"><span>🧹</span><b>Home Cleaning</b><small>Home care</small></button>
+        <button class="service" data-service="Carpenter"><span>🪚</span><b>Carpenter</b><small>Furniture & doors</small></button>
+        <button class="service" data-service="Appliance Repair"><span>🛠️</span><b>Appliance Repair</b><small>Home appliances</small></button>
+      </div>
+    </section>
+
+    <section class="booking section" id="book">
+      <p class="eyebrow">BOOK A PROFESSIONAL</p>
+      <h2>Request a service</h2>
+      <p class="sub">Share a few details. We’ll help connect you with a local service provider.</p>
+      <form id="bookingForm">
+        <label>Selected service<input id="service" name="service" value="Electrician" readonly></label>
+        <label>Your name<input name="customer" autocomplete="name" placeholder="Enter your name" required></label>
+        <label>Mobile number<input name="phone" type="tel" inputmode="tel" placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}" required></label>
+        <label>Your area / locality<input name="area" placeholder="e.g. Katpadi, Vellore" required></label>
+        <label>Full address<textarea name="address" rows="3" placeholder="House number, street and landmark" required></textarea></label>
+        <label>Describe the issue <span class="optional">(optional)</span><textarea name="details" rows="2" placeholder="Tell us what needs to be fixed"></textarea></label>
+        <button class="primary" type="submit">Send booking request on WhatsApp <span>→</span></button>
+        <p class="fineprint">No online payment is collected on this demo. Confirm the service charge with the provider before work begins.</p>
+      </form>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="trust section">
+      <h2>Simple. Local. Helpful.</h2>
+      <div class="trust-grid">
+        <div>📍<b>Nearby help</b><small>Choose your locality</small></div>
+        <div>🤝<b>Human support</b><small>Booking coordination</small></div>
+        <div>⭐<b>Feedback</b><small>Share your experience</small></div>
+      </div>
+    </section>
+  </main>
+  <footer><b>QUICKFIX</b><p>Local help, one simple booking.</p><small>Demo version · Service availability must be confirmed.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
